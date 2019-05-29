@@ -13,9 +13,7 @@
 ./httpd/httpd.2.4.33-alpine.tar
 ./https-portal/https-portal.1.7.1.tar
 ./jdk/java.8u111-jdk-alpine.tar
-./jenkins/chenq_jenkins.dind.tar
-./jenkins/docker-ce_17.12.0~ce-0~debian_amd64.deb
-./jenkins/jenkins.2.103.tar
+./jenkins/jenkins.2.179-jdk11.tar
 ./mailu/mailu_admin.1.6.tar
 ./mailu/mailu_dovecot.1.6.tar
 ./mailu/mailu_fetchmail.1.6.tar
