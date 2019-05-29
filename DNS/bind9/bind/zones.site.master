@@ -1,0 +1,8 @@
+zone "typhoon.fun" {
+    type master;
+    file "/etc/bind/zones/db.typhoon.fun";
+	notify yes;
+	allow-update { none; };
+	allow-transfer { 106.12.2.90; };
+};
+

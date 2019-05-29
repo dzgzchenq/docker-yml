@@ -1,0 +1,15 @@
+version: '3'
+services:
+  nexus:
+    image: sonatype/nexus3:3.12.0
+    container_name: nexus
+    #restart: always
+    network_mode: "bridge"
+    ports:
+      - "8081:8081"
+    volumes:
+      - nexus-data:/nexus-data
+    #environment:
+      #admin: admin123
+volumes:
+  nexus-data:

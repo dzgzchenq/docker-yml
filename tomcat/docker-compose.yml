@@ -1,0 +1,14 @@
+version: '3'
+services:
+    tomcat:
+      image: tomcat:9.0.7-jre8-alpine
+      container_name: some-tomcat
+      #restart: always
+      ports:
+        - 80:8080
+      volumes:
+        - ./webapps:/usr/local/tomcat/webapps
+        - ./logs:/usr/local/tomcat/logs
+        - /etc/localtime:/etc/localtime:ro
+      environment:
+        TZ: Asia/Shanghai

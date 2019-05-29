@@ -1,0 +1,10 @@
+version: '3'
+services:
+  shadowsocks:
+    image: mritd/shadowsocks
+    container_name: ssserver
+    restart: always
+    network_mode: "bridge"
+    ports:
+      - 2017:6443
+    command: -m "ss-server" -s "-s 0.0.0.0 -p 6443 -m chacha20 -k ${SHADOWSOCKS_KEY} --fast-open"

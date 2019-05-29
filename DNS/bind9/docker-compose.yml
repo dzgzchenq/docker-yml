@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  bind9:
+    build: .
+    image: chenq/bind9:latest
+    container_name: bind9
+    restart: always
+    network_mode: "bridge"
+    ports:
+      - "53:53/udp"
+      - "53:53"
+    volumes:
+      - ./bind/named.conf.local:/etc/bind/named.conf.local:ro
+      - ./bind/zones.site.master:/etc/bind/zones.site.master:ro
+      - ./bind/zones:/etc/bind/zones:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"

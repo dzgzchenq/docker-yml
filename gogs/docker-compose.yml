@@ -1,0 +1,15 @@
+version: '3'
+services:
+    gogs:
+      image: gogs/gogs:0.11.43
+      container_name: gogs
+      #restart: always
+      ports:
+        #- 8022:22
+        - 3000:3000
+      volumes:
+        - gogs-data:/data
+      environment:
+        TZ: Asia/Shanghai
+volumes:
+    gogs-data:

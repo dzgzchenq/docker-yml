@@ -1,0 +1,10 @@
+version: '3'
+services:
+    phpmyadmin:
+      image: phpmyadmin/phpmyadmin:4.7
+      container_name: some-phpmyadmin
+      ports:
+        - 3307:80
+      environment:
+        PMA_HOST: '192.168.30.178'
+        PMA_PORT: 3306

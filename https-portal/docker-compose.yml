@@ -1,0 +1,17 @@
+version: '3'
+services:
+  https-portal:
+    image: steveltn/https-portal:1.7.1
+    container_name: https-portal
+    restart: always
+    network_mode: "bridge"
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./ssl_certs:/var/lib/https-portal
+    environment:
+      DOMAINS: 'us.typhoon.fun -> http://47.254.29.242:8080'
+      #DOMAINS: 'username:password@example.com -> <upstream>'
+      #ACCESS_RESTRICTION: "1.2.3.4/24 4.3.2.1"
+      #DOMAINS: "[1.2.3.4/24] a.example.com -> <upstream> , [1.2.3.4/24 4.3.2.1] b.example.com"

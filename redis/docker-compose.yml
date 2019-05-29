@@ -1,0 +1,17 @@
+version: '3'
+services:
+    redis:
+      image: redis:3.2.11
+      container_name: some-redis
+      restart: always
+      network_mode: "bridge"
+      ports:
+        - 6379:6379
+      volumes:
+        - redis:/data
+        - /etc/localtime:/etc/localtime:ro
+        #- ./redis.conf:/usr/local/etc/redis/redis.conf:ro
+      command: redis-server --appendonly yes
+      #command: redis-server /usr/local/etc/redis/redis.conf
+volumes:
+    redis:
