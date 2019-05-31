@@ -37,7 +37,8 @@
 ./scope/scope.1.9.1.tar
 ./shadowsocks/mritd_ss.tar
 ./solr/solr.8.0.0-alpine.tar
-./svn/svn-server.tar
+./SVN/svn-client/chenq.svn-client.tar
+./SVN/svn-server/svn-server.tar
 ./swagger/swagger-editor.3.5.1.tar
 ./swagger/swagger-ui.3.0.5.tar
 ./tomcat/tomcat.9.0.7-jre8-alpine.tar
