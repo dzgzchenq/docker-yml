@@ -13,7 +13,7 @@
 ./httpd/httpd.2.4.33-alpine.tar
 ./https-portal/https-portal.1.7.1.tar
 ./jdk/java.8u111-jdk-alpine.tar
-./jenkins/jenkins.2.179-jdk11.tar
+./jenkins/jenkins.2.179.tar
 ./mailu/mailu_admin.1.6.tar
 ./mailu/mailu_dovecot.1.6.tar
 ./mailu/mailu_fetchmail.1.6.tar
