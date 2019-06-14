@@ -1,0 +1,18 @@
+version: '3'
+services:
+  gmond:
+    build: .
+    image: chenq/gmond
+    container_name: gmond
+    privileged: true
+    restart: always
+    network_mode: "bridge"
+    hostname: node2.gmond
+    ports:
+      - 8649:8649
+    dns:
+      - 106.12.2.90
+    volumes:
+      - ./config:/etc/ganglia:ro
+      - ./python:/usr/lib/ganglia/python_modules
+      - /etc/localtime:/etc/localtime:ro

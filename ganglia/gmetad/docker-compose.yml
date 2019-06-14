@@ -1,0 +1,19 @@
+version: '3'
+services:
+  gmetad:
+    build: .
+    image: chenq/gmetad
+    container_name: gmetad
+    network_mode: "bridge"
+    ports:
+      - 80:80
+      - 8651:8651
+      - 8652:8652
+    dns:
+      - 106.12.2.90
+    volumes:
+      - ./gmetad.conf:/etc/ganglia/gmetad.conf:ro
+      - rrds:/var/lib/ganglia/rrds
+      - /etc/localtime:/etc/localtime:ro
+volumes:
+  rrds:
