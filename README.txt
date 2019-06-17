@@ -37,6 +37,7 @@
 ./scope/scope.1.9.1.tar
 ./shadowsocks/mritd_ss.tar
 ./solr/solr.8.0.0-alpine.tar
+./sonarqube/sonarqube.6.7.7-community.tar
 ./SVN/svn-client/chenq.svn-client.tar
 ./SVN/svn-server/svn-server.tar
 ./swagger/swagger-editor.3.5.1.tar
