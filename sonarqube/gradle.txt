@@ -1,0 +1,12 @@
+build.gradle:
+buildscript {
+    dependencies {
+        classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.7.1")
+    }
+}
+
+apply plugin: "org.sonarqube"
+
+// gradlew sonarqube -Dsonar.host.url=http://ip:9000 -Dsonar.login=******
+// https://plugins.gradle.org/plugin/org.sonarqube
+// https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Gradle
