@@ -24,6 +24,7 @@
 ./mailu/redis.5.0.5-alpine3.9.tar
 ./maven/maven.3.5.2-jdk-8-alpine.tar
 ./mysql/mysql.5.7.20.tar
+./neo4j/neo4j.3.5.7.tar
 ./nexus/nexus3.3.12.0.tar
 ./nginx/nginx.1.16.0-alpine.tar
 ./node/node.9.10.0-alpine.tar
