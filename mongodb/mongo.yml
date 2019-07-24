@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:4.1.13-bionic
+    container_name: mongo
+    restart: always
+    network_mode: "bridge"
+    ports:
+      - 27017:27017
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+#      - ./mongod.conf:/etc/mongo/mongod.conf:ro
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+#    command: mongo --config /etc/mongo/mongod.conf

@@ -23,6 +23,8 @@
 ./mailu/mailu_rspamd.1.6.tar
 ./mailu/redis.5.0.5-alpine3.9.tar
 ./maven/maven.3.5.2-jdk-8-alpine.tar
+./mongodb/mongo.4.1.13-bionic.tar
+./mongodb/mongo-express.0.49.0.tar
 ./mysql/mysql.5.7.20.tar
 ./neo4j/neo4j.3.5.7.tar
 ./nexus/nexus3.3.12.0.tar
