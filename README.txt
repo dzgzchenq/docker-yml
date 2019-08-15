@@ -4,6 +4,7 @@
 ./debian.stretch-slim.tar
 ./DNS/bind9/chenq_bind9.tar
 ./DNS/dnsmasq/dnsmasq.1.1.0.tar
+./ffmpeg/chenq_ffmpeg.tar
 ./ftpd/ftpd.tar
 ./gitlab/gitlab-ce.10.3.5-ce.0.tar
 ./gogs/gogs.0.11.43.tar
