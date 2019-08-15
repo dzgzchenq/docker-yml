@@ -46,6 +46,7 @@
 ./swagger/swagger-editor.3.5.1.tar
 ./swagger/swagger-ui.3.0.5.tar
 ./tomcat/tomcat.9.0.7-jre8-alpine.tar
+./transmission/chenq_transmission.tar
 ./ubuntu/ubuntu.bionic-20180526.tar
 ./volume-gz/chenq_volume-gz.tar
 ./zabbix/zabbix-agent.alpine-4.2.0.tar
