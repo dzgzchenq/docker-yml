@@ -32,6 +32,7 @@
 ./nginx/nginx.1.16.0-alpine.tar
 ./node/node.9.10.0-alpine.tar
 ./phpmyadmin/phpmyadmin.4.7.tar
+./python.2.7.16-alpine.tar
 ./python.3.6-alpine3.7.tar
 ./rabbitmq/rabbitmq.3.7.12-management-alpine.tar
 ./redis/redis.3.2.11.tar
