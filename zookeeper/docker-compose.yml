@@ -1,0 +1,18 @@
+version: '3'
+services:
+  zoo:
+    image: zookeeper:3.5.5
+    container_name: zookeeper
+    restart: always
+    network_mode: "bridge"
+    ports:
+      - 2181:2181
+      - 2888:2888
+      - 3888:3888
+      - 8080:8080
+    #volumes:
+      #- ./zoo.cfg:/conf/zoo.cfg
+    environment:
+      ZOO_MY_ID: 1
+      ZOO_SERVERS: server.1=0.0.0.0:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=zoo3:2888:3888;2181
+# http://localhost:8080/commands/stat
