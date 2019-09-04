@@ -1,0 +1,15 @@
+version: '3'
+services:
+  kafka-manager:
+    image: kafkamanager/kafka-manager:2.0.0.2
+    container_name: kafka-manager
+    restart: always
+    network_mode: "bridge"
+    ports:
+      - 9000:9000
+    environment:
+      ZK_HOSTS: "106.12.2.90:2181"
+      APPLICATION_SECRET: "random-secret"
+      KAFKA_MANAGER_AUTH_ENABLED: "true"
+      KAFKA_MANAGER_USERNAME: "admin"
+      KAFKA_MANAGER_PASSWORD: "admin123"

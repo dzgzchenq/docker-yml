@@ -1,0 +1,13 @@
+version: '3'
+services:
+  kafka:
+    image: chenq/kafka:latest
+    container_name: kafka
+    restart: always
+    network_mode: "bridge"
+    ports:
+      - 9092:9092
+    volumes:
+      - ./server.properties:/opt/kafka/config/server.properties
+    environment:
+      TZ: Asia/Shanghai
