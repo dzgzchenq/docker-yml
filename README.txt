@@ -60,4 +60,5 @@
 ./zabbix/zabbix-server-mysql.alpine-4.2.0.tar
 ./zabbix/zabbix-snmptraps.alpine-4.2.0.tar
 ./zabbix/zabbix-web-nginx-mysql.alpine-4.2.0.tar
+./zipkin/zipkin.2.17.0.tar
 ./zookeeper/zookeeper.3.5.5.tar

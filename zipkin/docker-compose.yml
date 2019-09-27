@@ -1,0 +1,11 @@
+version: '3'
+services:
+  zipkin:
+    image: openzipkin/zipkin:2.17.0
+    container_name: zipkin
+    restart: always
+    network_mode: "bridge"
+    ports:
+      - 9411:9411
+    environment:
+      TZ: Asia/Shanghai
