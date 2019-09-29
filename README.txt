@@ -1,6 +1,7 @@
 ./alpine.3.7.tar
 ./busybox/busybox.tar
 ./centos.7.5.1804.tar
+./consul/consul.1.6.1.tar
 ./debian.stretch-slim.tar
 ./DNS/bind9/chenq_bind9.tar
 ./DNS/dnsmasq/dnsmasq.1.1.0.tar
