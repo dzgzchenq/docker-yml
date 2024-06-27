@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  shadowsocks:
+    image: mritd/shadowsocks2
+    container_name: shadowsocks2
+    restart: always
+    ports:
+      - "2017:26"
+      - "2017:26/udp"
+    command: -s "ss://AEAD_CHACHA20_POLY1305:${SHADOWSOCKS_KEY}@:26 -verbose"
