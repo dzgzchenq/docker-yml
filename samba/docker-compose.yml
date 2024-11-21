@@ -1,23 +1,12 @@
-version: '3'
 services:
-    samba:
-      image: forumi0721alpinex64/alpine-x64-samba:latest
-      container_name: samba
-      tty: true
-      restart: always
-      ports:
-        - "137:137/udp"
-        - "138:138/udp"
-        - "139:139/tcp"
-        - "445:445/tcp"
-      volumes:
-        - ./mnt:/data
-      environment:
-        TZ: Asia/Shanghai
-        USER_NAME: chenq
-        USER_PASSWD: 123456
-        USER_UID: 1000
-        USER_GID: 100
-        NETBIOS_NAME: SAMBA
-        WORKGROUP: WORKGROUP
-        SAMBA_SHARE: "data=/data"
+  samba:
+    image: dockurr/samba
+    container_name: samba
+    environment:
+      NAME: "Data"
+      USER: "cq"
+      PASS: "123456"
+    ports:
+      - 445:445
+    volumes:
+      - ./data:/storage
